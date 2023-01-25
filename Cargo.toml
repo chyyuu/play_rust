@@ -1,0 +1,30 @@
+[package]
+name = "play_rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[example]]
+name = "ex1"
+path = "examples/ex1.rs"
+
+[[example]]
+name = "ex2"
+path = "examples/ex2.rs"
+
+
+[[bin]]
+name = "p1"
+path = "src/p1.rs"
+
+[[bin]]
+name = "p2"
+path = "src/p2.rs"
+
+
+[[bin]]
+name = "p3"
+path = "src/p3.rs"
+
+[dependencies]
+libudev = "0.3"
