@@ -9,4 +9,4 @@ fn main() {
     for device in enumerator.scan_devices().unwrap() {
         println!("found device: {:?}", device.syspath());
     }
-}v
+}

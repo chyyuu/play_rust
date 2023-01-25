@@ -5,7 +5,7 @@ fn main() {
     let r = &1;
     //print_type_name_of(r);
     let &_a = r;
-    let ref _b =1;
+    let ref _b = 1;
     let _a = *r;
     let x = &false;
     print_type_name_of(x);

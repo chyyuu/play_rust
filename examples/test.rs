@@ -6,7 +6,7 @@ fn main() {
         println!("{}", msg);
     };
     say_hello(); // Hello String!
-    //println!("{}", msg1); // 此时无法访问`msg1`，因为它的所有权已经转移到闭包了
+                 //println!("{}", msg1); // 此时无法访问`msg1`，因为它的所有权已经转移到闭包了
 
     // 不可变借用
     let msg2 = String::from("Hello &String!");
@@ -27,7 +27,7 @@ fn main() {
 
     say_hello(); // Hello &mut String!
     say_hello(); // Hello &mut String!!
-    //msg3.push_str("--");
+                 //msg3.push_str("--");
     let mut say_hello2 = || {
         let msg = &mut msg3;
         msg.push_str("--");

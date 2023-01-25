@@ -1,5 +1,5 @@
-use std::rc::Rc;
 use std::cell::Cell;
+use std::rc::Rc;
 
 fn x() {
     println!("x");
@@ -26,12 +26,12 @@ fn f(a: &i32, b: &mut i32) {
 fn main() {
     println!("Hello，world");
     let a = Rc::new([1, 2, 3]);
-    let  b = [1,2,3];
-    let mut c = [1,2,3];
-    f(& b[1],&mut c[2]);
-    let d =Cell::new(5);
+    let b = [1, 2, 3];
+    let mut c = [1, 2, 3];
+    f(&b[1], &mut c[2]);
+    let d = Cell::new(5);
     let e = Cell::new(6);
-    f2(&d,&d);
-    println!("a addr = {:?} {}",a.as_ptr(),a[1]);
+    f2(&d, &d);
+    println!("a addr = {:?} {}", a.as_ptr(), a[1]);
     //assert_eq!(a.as_ptr(), b.as_ptr()); // Same allocation!
 }
