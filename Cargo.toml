@@ -29,3 +29,4 @@ path = "src/p3.rs"
 [dependencies]
 libudev = "0.3"
 ouroboros = "0.15"
+rand="0.8"
